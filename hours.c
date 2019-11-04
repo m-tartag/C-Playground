@@ -42,3 +42,7 @@ int main()
 
     printf("New time: %i\n", newTime % 12);
 }
+
+// Module
+
+// Range Manipulation!
