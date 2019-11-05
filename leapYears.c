@@ -5,25 +5,16 @@
 int main()
 {
     int YEAR = 0;
-    printf("ENTER YEAR: ");
+    printf("Enter Year: ");
     scanf("%i", &YEAR);
     printf("%i\n", YEAR);
 
-    if (YEAR % 400 == 0)
+    if (YEAR % 400 == 0 || (YEAR % 100 != 0 && YEAR % 4 == 0))
     {
-        printf("Leap Year: Confirmed");
-    }
-    else if (YEAR % 100 == 0)
-    {
-        printf("Not Leap Year");
-    }
-    else if (YEAR % 4 == 0)
-    {
-        printf("Leap Year: Confirmed");
+        printf("Leap Year: Confirmed\n");
     }
     else
     {
-        printf("Not Leap Year");
+        printf("Not Leap\n");
     }
-    return 0;
 }
