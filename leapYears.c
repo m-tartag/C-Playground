@@ -8,6 +8,7 @@ int main()
     printf("ENTER YEAR: ");
     scanf("%i", &YEAR);
     printf("%i\n", YEAR);
+
     if (YEAR % 400 == 0)
     {
         printf("Leap Year: Confirmed");
